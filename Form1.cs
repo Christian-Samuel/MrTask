@@ -228,30 +228,6 @@ namespace MrTask
             ControleTarefas.carregarDescricao(descricaoTxt,nomeTxt,item,DomLis);
         }
 
-        private void it1_MouseHover(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.White;
-        }
-
-        private void it1_MouseLeave(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.Chartreuse;
-        }
-
-        private void it22_MouseHover(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.White;
-        }
-
-        private void it22_MouseLeave(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.Chartreuse;
-        }
-
         private void it22_Click(object sender, EventArgs e)
         {
             Label[] SegLis = { it12, it13, it14, it15, it16, it17, it18, it19, it20, it21, it22 };
@@ -269,36 +245,12 @@ namespace MrTask
 
         }
 
-        private void it33_MouseHover(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.White;
-        }
-
-        private void it33_MouseLeave(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.Chartreuse;
-        }
-
         private void it44_Click(object sender, EventArgs e)
         {
             Label[] QuaLis = { it34, it35, it36, it37, it38, it39, it40, it41, it42, it43, it44 };
             Label item = sender as Label;
             ControleTarefas.abrirGerenciadorTarefa(dateTimePicker4, ListaQua);
             ControleTarefas.carregarDescricao(descricaoTxt, nomeTxt, item, QuaLis);
-        }
-
-        private void it44_MouseHover(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.White;
-        }
-
-        private void it44_MouseLeave(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.Chartreuse;
         }
 
         private void it55_Click(object sender, EventArgs e)
@@ -309,18 +261,6 @@ namespace MrTask
             ControleTarefas.carregarDescricao(descricaoTxt, nomeTxt, item, QuiLis);
         }
 
-        private void it55_MouseHover(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.White;
-        }
-
-        private void it55_MouseLeave(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.Chartreuse;
-        }
-
         private void it66_Click(object sender, EventArgs e)
         {
             Label[] SexLis = { it56, it57, it58, it59, it60, it61, it62, it63, it64, it65, it66 };
@@ -329,36 +269,12 @@ namespace MrTask
             ControleTarefas.carregarDescricao(descricaoTxt, nomeTxt, item, SexLis);
         }
 
-        private void it66_MouseHover(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.White;
-        }
-
-        private void it66_MouseLeave(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.Chartreuse;
-        }
-
         private void it77_Click(object sender, EventArgs e)
         {
             Label[] SabLis = { it67, it68, it69, it70, it71, it72, it73, it74, it75, it76, it77 };
             Label item = sender as Label;
             ControleTarefas.abrirGerenciadorTarefa(dateTimePicker7, ListaSab);
             ControleTarefas.carregarDescricao(descricaoTxt, nomeTxt, item, SabLis);
-        }
-
-        private void it77_MouseHover(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.White;
-        }
-
-        private void it77_MouseLeave(object sender, EventArgs e)
-        {
-            Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.Chartreuse;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -370,6 +286,18 @@ namespace MrTask
         {
             MessageBox.Show("Christian Samuel->->->" +
                 " Christian.cs.silva@gmail.com");
+        }
+
+        private void it1_MouseLeave_1(object sender, EventArgs e)
+        {
+            Label item = sender as Label;
+            item.BackColor = System.Drawing.Color.Chartreuse;
+        }
+
+        private void it1_MouseHover_1(object sender, EventArgs e)
+        {
+            Label item = sender as Label;
+            item.BackColor = System.Drawing.Color.White;
         }
     }
 }

@@ -16,12 +16,11 @@ namespace MrTask
     {
         static int diaTarefa;
         static DateTimePicker Data;
-        //static CheckedListBox Lista;
         static ParteTarefa Lista;
 
         public static void gerarTarefaDia(string nome, string desc)
         {
-            string patch = "C:\\MrTask\\";
+            string patch = "C:\\chrYstTan\\MrTask\\";
             string tempLocal =diaTarefa.ToString() + ".cal";
 
             if (!Directory.Exists(patch))
@@ -55,7 +54,7 @@ namespace MrTask
 
             for (int x=1; x<=366; x++)
             {
-                string patch = "C:\\MrTask\\";
+                string patch = "C:\\chrYstYan\\MrTask\\";
                 string tempLocal = x.ToString() + ".cal";
                 string palavra;
                 
@@ -105,7 +104,7 @@ namespace MrTask
 
         public static void carregarDescricao(Label descricao, Label nome, Label item, Label[] listBox)
         {
-            string patch = "C:\\MrTask\\";
+            string patch = "C:\\chrYstYan\\MrTask\\";
             string tempLocal = diaTarefa.ToString() + ".cal";
             string palavra;
             nome.Text = "";
@@ -155,7 +154,7 @@ namespace MrTask
 
         public static void atualizarTarefa(Label item, Label[] listBox)
          {
-             string patch = "C:\\MrTask\\";
+             string patch = "C:\\chrYstYan\\MrTask\\";
              string tempLocal = diaTarefa.ToString() + ".cal";
              string tempLocal2 = "bak.cal";
 
@@ -182,7 +181,6 @@ namespace MrTask
                              {
                                  string palavra = "";
                                  string palavraDB = "";
-                                 //int index = Lista.SelectedIndex;
                                  int x = 0;
 
                                  if (index > 0)
