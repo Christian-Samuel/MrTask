@@ -50,6 +50,15 @@ namespace MrTask
             ParteTarefa[] listaDias = { ListaDom, ListaSeg, ListaTer, ListaQua, ListaQui, ListaSex, ListaSab };
             DateTimePicker[] timePickers = { dateTimePicker1, dateTimePicker2, dateTimePicker3, dateTimePicker4, dateTimePicker5, dateTimePicker6, dateTimePicker7 };
             ControleTarefas.CarregarTarefa(listaDias, timePickers);
+            label1.Text = dateTimePicker1.Value.DayOfWeek.ToString();
+            label3.Text = dateTimePicker2.Value.DayOfWeek.ToString();
+            label5.Text = dateTimePicker3.Value.DayOfWeek.ToString();
+            label4.Text = dateTimePicker4.Value.DayOfWeek.ToString();
+            label7.Text = dateTimePicker5.Value.DayOfWeek.ToString();
+            label6.Text = dateTimePicker6.Value.DayOfWeek.ToString();
+            label10.Text = dateTimePicker7.Value.DayOfWeek.ToString();
+
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {   
@@ -291,13 +300,19 @@ namespace MrTask
         private void it1_MouseLeave_1(object sender, EventArgs e)
         {
             Label item = sender as Label;
-            item.BackColor = System.Drawing.Color.Chartreuse;
+            item.BackColor = System.Drawing.Color.FromArgb(192, 255, 192);
         }
 
         private void it1_MouseHover_1(object sender, EventArgs e)
         {
             Label item = sender as Label;
             item.BackColor = System.Drawing.Color.White;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label1.Text = dateTimePicker1.Value.DayOfWeek.ToString();
+         
         }
     }
 }

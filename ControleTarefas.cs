@@ -20,7 +20,7 @@ namespace MrTask
 
         public static void gerarTarefaDia(string nome, string desc)
         {
-            string patch = "C:\\chrYstTan\\MrTask\\";
+            string patch = "C:\\chrYstYan\\MrTask\\";
             string tempLocal =diaTarefa.ToString() + ".cal";
 
             if (!Directory.Exists(patch))
