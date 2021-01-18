@@ -2,7 +2,7 @@
 Aplicativo para gerenciar tarefas do dia a dia
 
 -Tela Principal:<br>
-![telaprincipal](https://github.com/Christian-Samuel/MrTask/blob/master/Imagens/Tela.PNG?raw=true)
+![telaprincipal](https://github.com/Christian-Samuel/MrTask/blob/master/Imagens/Tela.GIF?raw=true)
 
 -Adicionar tarefa:<br>
 ![cardtask](https://github.com/Christian-Samuel/MrTask/blob/master/Imagens/addtask.PNG?raw=true)
