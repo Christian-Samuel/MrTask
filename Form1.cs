@@ -314,5 +314,27 @@ namespace MrTask
             label1.Text = dateTimePicker1.Value.DayOfWeek.ToString();
          
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void label12_MouseHover(object sender, EventArgs e)
+        {
+            Label icone = sender as Label;
+            icone.BackColor = Color.FromArgb(255, 192, 192);
+        }
+
+        private void label12_MouseLeave(object sender, EventArgs e)
+        {
+            Label icone = sender as Label;
+            icone.BackColor = Color.FromArgb(128, 255, 128);
+        }
     }
 }
